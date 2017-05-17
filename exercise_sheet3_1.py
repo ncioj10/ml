@@ -5,7 +5,7 @@ ym = np.matrix([150,155,150,170,160,175]).astype(float).T
 wm = np.matrix([0,0])
 
 running = True
-inc = 0.0001
+inc = 0.001
 
 
 
@@ -26,7 +26,7 @@ while running:
             running = True
 
     wm = wm + weights * inc
-    if counter > 10000:
+    if counter > 100000:
         break
 
 
